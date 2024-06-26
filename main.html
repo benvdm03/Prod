@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header, section {
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #00ff00;
+            color: #000;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .project, .experience {
+            background-color: #111;
+            border: 1px solid #00ff00;
+            margin: 10px;
+            padding: 20px;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .projects .project {
+            flex: 1 1 30%;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .photo-gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .modal-content, #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+        @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ben's Portfolio</h1>
+        <p>Get to know Ben and his professional experiences, hobbies, and interests.</p>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Hi, I'm Ben. I specialize in IT, Automation, Data Security, and Data Analytics. I'm passionate about creating solutions that improve efficiency and security.</p>
+    </section>
+
+    <section id="data-analysis" data-aos="fade-up">
+        <h2>Data Analyzation and Visualization</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project. <a href="https://github.com/username/project1" target="_blank">View on GitHub</a></p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project. <a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="network-security" data-aos="fade-up">
+        <h2>Network Security and Infrastructure</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project. <a href="https://github.com/username/project1" target="_blank">View on GitHub</a></p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project. <a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="automation-scripting" data-aos="fade-up">
+        <h2>Automation and Scripting</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project. <a href="https://github.com/username/project1" target="_blank">View on GitHub</a></p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project. <a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="photo-gallery" data-aos="fade-up">
+        <h2>Photo Gallery</h2>
+        <div class="photo-gallery">
+            <img src="https://drive.google.com/uc?export=view&id=1Kr7EI7-o4QvLQo57KylC9AmvGMKbi22o" alt="Photo 1" onclick="openModal(this)">
+            <img src="https://drive.google.com/uc?export=view&id=1MVgYZdmpwXdiNGVWneapURMvKrQI1oQB" alt="Photo 2" onclick="openModal(this)">
+            <img src="https://drive.google.com/uc?export=view&id=1Vi6YAqPez6upkzdbbpJQfBS8rqPLLC3L" alt="Photo 3" onclick="openModal(this)">
+            <img src="https://drive.google.com/uc?export=view&id=1pA8_XTMgKpChCmLjZQb5KG1lziZk1iny" alt="Photo 4" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me on <a href="https://www.linkedin.com/in/benjamin-van-der-merwe-a2a55b16b/" target="_blank">LinkedIn</a> or <a href="mailto:email@example.com">email@example.com</a>.</p>
+    </section>
+
+    <!-- Modal for Image Pop-up -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- AOS Library Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function openModal(element) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            modal.style.display = "block";
+            modalImg.src = element.src;
+            captionText.innerHTML = element.alt;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
