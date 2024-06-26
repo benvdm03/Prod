@@ -43,7 +43,7 @@
             justify-content: center;
         }
         .projects .project {
-            flex: 1 1 30%;
+            flex: 1 1 45%;
             box-sizing: border-box;
             margin: 10px;
         }
@@ -106,6 +106,17 @@
             text-decoration: none;
             cursor: pointer;
         }
+        .certifications, .skills, .future-projects, .resources {
+            text-align: left;
+            margin: 20px;
+        }
+        .certifications ul, .skills ul, .future-projects ul, .resources ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .certifications li, .skills li, .future-projects li, .resources li {
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -114,51 +125,87 @@
         <p>Get to know Ben and his professional experiences, hobbies, and interests.</p>
     </header>
 
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>Hi, I'm Ben. I specialize in IT, Automation, Data Security, and Data Analytics. I'm passionate about creating solutions that improve efficiency and security.</p>
-    </section>
+    <div style="display: flex; justify-content: center;">
+        <img src="https://github.com/benvdm03/Infinity/assets/161901352/a33898e2-cb6f-4bdc-bad0-ebc26c6ebc05" alt="Image 1" style="width: 30%;">
+        <img src="https://github.com/benvdm03/Infinity/assets/161901352/31156835-984d-43f1-b58d-4d5b689026c2" alt="Image 2" style="width: 30%;">
+    </div>
 
     <section id="data-analysis" data-aos="fade-up">
-        <h2>Data Analyzation and Visualization</h2>
+        <h2>Data Analyzation and Visualization 📊</h2>
+        <p>Projects that focus on analyzing datasets to extract valuable insights and trends, visualized through charts, graphs, and interactive dashboards. They showcase proficiency in data manipulation, statistical analysis, and the ability to communicate complex information effectively using visual representations.</p>
         <div class="projects">
             <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Brief description of the project. <a href="https://github.com/username/project1" target="_blank">View on GitHub</a></p>
+                <h3>Mexican Tortilla Price Inflation (2007 - 2020)</h3>
+                <p>Analyzing price trends over time. <a href="https://github.com/benvdm03/Tortillas" target="_blank">View on GitHub</a></p>
             </div>
             <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Brief description of the project. <a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
+                <h3>How Fast Can a Human Being Run 1500m?</h3>
+                <p>Analysis of running speeds. <a href="https://github.com/benvdm03/Speed" target="_blank">View on GitHub</a></p>
             </div>
         </div>
     </section>
 
     <section id="network-security" data-aos="fade-up">
-        <h2>Network Security and Infrastructure</h2>
+        <h2>Network Security and Infrastructure 🔒</h2>
+        <p>Projects that focus on ensuring the security and reliability of network infrastructure. They include tasks such as configuring firewalls, implementing encryption protocols, and monitoring network traffic for potential threats. These projects demonstrate expertise in network architecture, cybersecurity protocols, and proactive threat mitigation strategies.</p>
         <div class="projects">
             <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Brief description of the project. <a href="https://github.com/username/project1" target="_blank">View on GitHub</a></p>
-            </div>
-            <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Brief description of the project. <a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
+                <h3>Establish VPN and MFA Configuration Requirements</h3>
+                <p>VPN and MFA setup. <a href="https://github.com/benvdm03/OpenVPN" target="_blank">View on GitHub</a></p>
             </div>
         </div>
     </section>
 
     <section id="automation-scripting" data-aos="fade-up">
-        <h2>Automation and Scripting</h2>
+        <h2>Automation and Scripting 🤖</h2>
+        <p>Projects that focus on automating repetitive tasks and streamlining processes through scripting and automation techniques. They showcase the ability to write scripts in languages like Python or PowerShell to automate system administration tasks, deploy software, or perform data processing operations. These projects demonstrate efficiency, accuracy, and innovation in optimizing workflows through automation.</p>
         <div class="projects">
             <div class="project">
-                <h3>Project Title 1</h3>
-                <p>Brief description of the project. <a href="https://github.com/username/project1" target="_blank">View on GitHub</a></p>
+                <h3>Automated Testing Framework Implementation</h3>
+                <p>Framework for automated testing. <a href="https://github.com/benvdm03/AutomatedTestingFramework" target="_blank">View on GitHub</a></p>
             </div>
             <div class="project">
-                <h3>Project Title 2</h3>
-                <p>Brief description of the project. <a href="https://github.com/username/project2" target="_blank">View on GitHub</a></p>
+                <h3>MiniMax Artificial Intelligence Connect 4 Game</h3>
+                <p>AI-powered Connect 4 game using MiniMax algorithm. <a href="https://github.com/benvdm03/Connect4" target="_blank">View on GitHub</a></p>
             </div>
         </div>
+    </section>
+
+    <section id="certifications" data-aos="fade-up">
+        <h2>Relevant Certifications</h2>
+        <ul class="certifications">
+            <li>AWS Certified Cloud Practitioner ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)</li>
+            <li>Microsoft Certified: AZ-900 Azure Fundamentals ![Azure](https://img.shields.io/badge/Azure-Cloud-blue)</li>
+            <li>Google Cloud digital Leader Certification ![Google Cloud](https://img.shields.io/badge/Google_Cloud-Platform-green)</li>
+        </ul>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>![Python](https://img.shields.io/badge/Python-3.8-blue)</li>
+            <li>![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)</li>
+            <li>![Flask](https://img.shields.io/badge/Flask-2.0.1-black)</li>
+            <li>![Git](https://img.shields.io/badge/Git-2.31.1-orange)</li>
+        </ul>
+    </section>
+
+    <section id="future-projects" data-aos="fade-up">
+        <h2>Future Projects</h2>
+        <ul class="future-projects">
+            <li><strong>Develop a Network Traffic Analyzer:</strong> Create a tool that captures and analyzes network traffic to identify unusual patterns and potential security threats using real-time monitoring and machine learning techniques.</li>
+            <li><strong>Build a Vulnerability Scanner:</strong> Design a tool that scans networks and systems to identify security weaknesses, providing reports and recommendations for mitigation based on identified vulnerabilities.</li>
+            <li><strong>Integrate Custom GPT and Open APIs into a Website:</strong> Develop a project that integrates custom GPT models and various Open APIs into an existing website to enhance its functionality and user experience. Use API connections to seamlessly incorporate these features into the site.</li>
+        </ul>
+    </section>
+
+    <section id="resources" data-aos="fade-up">
+        <h2>Resources</h2>
+        <ul class="resources">
+            <li><a href="https://www.kaggle.com/" target="_blank">Kaggle</a></li>
+            <li><a href="https://chat.openai.com/" target="_blank">OpenAI ChatGPT</a></li>
+            <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+        </ul>
     </section>
 
     <section id="photo-gallery" data-aos="fade-up">
@@ -173,6 +220,7 @@
 
     <section id="contact" data-aos="fade-up">
         <h2>Contact</h2>
+        <p>For a detailed view of my contact information and professional experience, please visit my <a href="https://github.com/benvdm03/ContactInfo&Exp" target="_blank">Contact Information and Experience</a> page.</p>
         <p>Feel free to reach out to me on <a href="https://www.linkedin.com/in/benjamin-van-der-merwe-a2a55b16b/" target="_blank">LinkedIn</a> or <a href="mailto:email@example.com">email@example.com</a>.</p>
     </section>
 
